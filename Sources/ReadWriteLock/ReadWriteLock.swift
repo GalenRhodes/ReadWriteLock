@@ -38,7 +38,7 @@ import CoreFoundation
 
 /*==============================================================================================================*/
 /// An implementation of a classic [Read/Write](https://en.wikipedia.org/wiki/Readers–writer_lock) lock.
-///
+/// 
 /// NOTE: You should use caution with DispatchQueues. DispatchQueues reuse threads.
 ///
 public class ReadWriteLock {
@@ -84,7 +84,7 @@ public class ReadWriteLock {
     /*==========================================================================================================*/
     /// Displays a message that the current thread already owns a different lock than the one it's requesting and
     /// then terminates the application.
-    ///
+    /// 
     /// - Returns: Never
     ///
     @usableFromInline func wrongOwnershipError() -> Never {
@@ -93,7 +93,7 @@ public class ReadWriteLock {
 
     /*==========================================================================================================*/
     /// Displays a message that the current thread does not own any locks and then terminates the application.
-    ///
+    /// 
     /// - Returns: Never
     ///
     @usableFromInline func nonOwnershipError() -> Never {
@@ -103,7 +103,7 @@ public class ReadWriteLock {
     /*==========================================================================================================*/
     /// Displays a message that the current thread already owns the lock that it's requesting and then terminates
     /// the application.
-    ///
+    /// 
     /// - Returns: Never
     ///
     @usableFromInline func alreadyOwnsError() -> Never {
@@ -112,7 +112,7 @@ public class ReadWriteLock {
 
     /*==========================================================================================================*/
     /// Displays a message that an unknown error has occurred and then terminates the application.
-    ///
+    /// 
     /// - Returns: Never
     ///
     @usableFromInline func unknownError() -> Never {
@@ -121,7 +121,7 @@ public class ReadWriteLock {
 
     /*==========================================================================================================*/
     /// Displays a message that the Read/Write lock could not be initialized and then terminates the application.
-    ///
+    /// 
     /// - Returns: Never
     ///
     @usableFromInline func initializationError() -> Never {
@@ -159,7 +159,7 @@ extension ReadWriteLock {
     /*==========================================================================================================*/
     /// Executes the given closure while holding the read lock. The read lock is acquired before the closure is
     /// executed and then automatically released when the closure completes or if an exception is thrown.
-    ///
+    /// 
     /// - Parameter body: The closure to execute while holding the read lock.
     /// - Returns: The value, if any, returned by the closure.
     /// - Throws: Any error thrown by the closure.
@@ -173,7 +173,7 @@ extension ReadWriteLock {
     /*==========================================================================================================*/
     /// Executes the given closure while holding the write lock. The write lock is acquired before the closure is
     /// executed and then automatically released when the closure completes or if an exception is thrown.
-    ///
+    /// 
     /// - Parameter body: The closure to execute while holding the write lock.
     /// - Returns: The value, if any, returned by the closure.
     /// - Throws: Any error thrown by the closure.
@@ -189,7 +189,7 @@ extension ReadWriteLock {
     /// closure is executed and then automatically released when the closure completes or if an exception is
     /// thrown. If the read lock is not immediately available then the closure is never executed and this method
     /// returns `nil`.
-    ///
+    /// 
     /// - Parameter body: The closure to execute while holding the read lock.
     /// - Returns: The value, if any, returned by the closure or `nil` if the read lock could not be immediately
     ///            acquired.
@@ -206,7 +206,7 @@ extension ReadWriteLock {
     /// closure is executed and then automatically released when the closure completes or if an exception is
     /// thrown. If the write lock is not immediately available then the closure is never executed and this method
     /// returns `nil`.
-    ///
+    /// 
     /// - Parameter body: The closure to execute while holding the write lock.
     /// - Returns: The value, if any, returned by the closure or `nil` if the write lock could not be immediately
     ///            acquired.
@@ -234,7 +234,7 @@ extension ReadWriteLock {
     /*==========================================================================================================*/
     /// Attempts to acquire the read lock. If the read lock is currently being held by another thread then this
     /// method returns `false`. Otherwise the read lock is acquired by this thread and `true` is returned.
-    ///
+    /// 
     /// - Returns: `false` if another thread currently holds the read lock. Otherwise, `true`.
     ///
     @inlinable public func tryReadLock() -> Bool {
@@ -267,7 +267,7 @@ extension ReadWriteLock {
     /*==========================================================================================================*/
     /// Attempts to acquire the write lock. If the write lock is currently being held by another thread then this
     /// method returns `false`. Otherwise the write lock is acquired by this thread and `true` is returned.
-    ///
+    /// 
     /// - Returns: `false` if another thread currently holds the write lock. Otherwise, `true`.
     ///
     @inlinable public func tryWriteLock() -> Bool {
@@ -304,7 +304,7 @@ extension ReadWriteLock.RWState: CustomStringConvertible {
     /*==========================================================================================================*/
     /// Returns the state that is opposite of the one provided. If the state is `Read` then `Write` is returned.
     /// If the state is `Write` then `Read` is returned. If the state is `None` then `None` is returned.
-    ///
+    /// 
     /// - Parameter s: The state.
     /// - Returns: The opposite state.
     ///

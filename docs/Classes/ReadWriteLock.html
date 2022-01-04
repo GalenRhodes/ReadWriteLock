@@ -150,7 +150,8 @@ executed and then automatically released when the closure completes or if an exc
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">@inlinable</span>
 <span class="kd">public</span> <span class="kd">func</span> <span class="n">withReadLock</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">body</span><span class="p">:</span> <span class="p">()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">)</span> <span class="k">rethrows</span> <span class="o">-&gt;</span> <span class="kt">T</span></code></pre>
 
                         </div>
@@ -210,7 +211,8 @@ executed and then automatically released when the closure completes or if an exc
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">@inlinable</span>
 <span class="kd">public</span> <span class="kd">func</span> <span class="n">withWriteLock</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">body</span><span class="p">:</span> <span class="p">()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">)</span> <span class="k">rethrows</span> <span class="o">-&gt;</span> <span class="kt">T</span></code></pre>
 
                         </div>
@@ -272,7 +274,8 @@ returns <code>nil</code>.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">@inlinable</span>
 <span class="kd">public</span> <span class="kd">func</span> <span class="n">tryWithReadLock</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">body</span><span class="p">:</span> <span class="p">()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">)</span> <span class="k">rethrows</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">?</span></code></pre>
 
                         </div>
@@ -335,7 +338,8 @@ returns <code>nil</code>.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">@inlinable</span>
 <span class="kd">public</span> <span class="kd">func</span> <span class="n">tryWithWriteLock</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">body</span><span class="p">:</span> <span class="p">()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">)</span> <span class="k">rethrows</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">?</span></code></pre>
 
                         </div>
