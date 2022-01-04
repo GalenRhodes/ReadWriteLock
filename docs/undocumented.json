@@ -1,0 +1,19 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/grhodes/Projects/2022/ReadWriteLock/Sources/ReadWriteLock/ThreadLocal.swift",
+      "line": 40,
+      "symbol": "ThreadLocal.wrappedValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/grhodes/Projects/2022/ReadWriteLock/Sources/ReadWriteLock/ThreadLocal.swift",
+      "line": 51,
+      "symbol": "ThreadLocal.init(wrappedValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/grhodes/Projects/2022/ReadWriteLock"
+}

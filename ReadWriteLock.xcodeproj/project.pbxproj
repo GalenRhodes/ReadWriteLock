@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		831F4A8027839B7200B278B9 /* ReadWriteLock.docc in Sources */ = {isa = PBXBuildFile; fileRef = 831F4A7F27839B7200B278B9 /* ReadWriteLock.docc */; };
-		831F4A8627839B7200B278B9 /* ReadWriteLock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831F4A7B27839B7200B278B9 /* ReadWriteLock.framework */; };
-		831F4A8B27839B7200B278B9 /* ReadWriteLockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F4A8A27839B7200B278B9 /* ReadWriteLockTests.swift */; };
-		831F4A8C27839B7200B278B9 /* ReadWriteLock.h in Headers */ = {isa = PBXBuildFile; fileRef = 831F4A7E27839B7200B278B9 /* ReadWriteLock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1117D2E96596F05D7F3C7B61 /* ReadWriteLockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1117DA2965352AEB3D5D9FAE /* ReadWriteLockTests.swift */; };
+		1117D31B26F006363031C83B /* ThreadLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1117DD34906E892BBEE47811 /* ThreadLocal.swift */; };
+		1117D44592AD7D52C676DF78 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1117D069592C8B78F4AE3D71 /* Utils.swift */; };
+		1117D95999F802E9F5AA85CC /* ReadWriteLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1117D4A6C3B4D4F094EF42CD /* ReadWriteLock.swift */; };
+		1117D9995D1A53E9D38D0862 /* ReadWriteLock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1117D879A0FCE5DDBEA7247D /* ReadWriteLock.framework */; };
+		1117DBF08F7E6ED1CEE9587B /* ReadWriteLock.docc in Resources */ = {isa = PBXBuildFile; fileRef = 1117D794380C8F03D30F1C8E /* ReadWriteLock.docc */; };
+		1117DC8627BEEA65531028CC /* ReadWriteLock.h in Headers */ = {isa = PBXBuildFile; fileRef = 1117D605EC0ABE1A0FBA09D5 /* ReadWriteLock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		831F4AA02784CC9B00B278B9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F4A9F2784CC9B00B278B9 /* main.swift */; };
+		831F4AA62784CCC000B278B9 /* PGDocFixer in Frameworks */ = {isa = PBXBuildFile; productRef = 831F4AA52784CCC000B278B9 /* PGDocFixer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +28,34 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		831F4A9A2784CC9B00B278B9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		831F4A7B27839B7200B278B9 /* ReadWriteLock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReadWriteLock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		831F4A7E27839B7200B278B9 /* ReadWriteLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadWriteLock.h; sourceTree = "<group>"; };
-		831F4A7F27839B7200B278B9 /* ReadWriteLock.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ReadWriteLock.docc; sourceTree = "<group>"; };
-		831F4A8527839B7200B278B9 /* ReadWriteLockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadWriteLockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		831F4A8A27839B7200B278B9 /* ReadWriteLockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadWriteLockTests.swift; sourceTree = "<group>"; };
+		1117D069592C8B78F4AE3D71 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		1117D25ECF74502AE394E000 /* ReadWriteLockTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file.xctest; name = ReadWriteLockTests.xctest; path = "../../../Library/Caches/JetBrains/AppCode2021.3/DerivedData/ReadWriteLock-argufeoezzitdmblutohburpcwcs/Build/Products/Debug/ReadWriteLockTests.xctest"; sourceTree = "<group>"; };
+		1117D4A6C3B4D4F094EF42CD /* ReadWriteLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadWriteLock.swift; sourceTree = "<group>"; };
+		1117D605EC0ABE1A0FBA09D5 /* ReadWriteLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadWriteLock.h; sourceTree = "<group>"; };
+		1117D794380C8F03D30F1C8E /* ReadWriteLock.docc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ReadWriteLock.docc; sourceTree = "<group>"; };
+		1117D879A0FCE5DDBEA7247D /* ReadWriteLock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReadWriteLock.framework; path = "../../../Library/Caches/JetBrains/AppCode2021.3/DerivedData/ReadWriteLock-argufeoezzitdmblutohburpcwcs/Build/Products/Debug/ReadWriteLock.framework"; sourceTree = "<group>"; };
+		1117D9123BF7AD8B49B97165 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		1117D9D6C9717CE96E32979B /* .jazzy.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .jazzy.yaml; sourceTree = "<group>"; };
+		1117DA2965352AEB3D5D9FAE /* ReadWriteLockTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadWriteLockTests.swift; sourceTree = "<group>"; };
+		1117DB634F39B0428F2D6E15 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
+		1117DD34906E892BBEE47811 /* ThreadLocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadLocal.swift; sourceTree = "<group>"; };
+		1117DE641880F44D5CE2D2D2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1117DECDA6D4748E541E5F2A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		831F4A9C2784CC9B00B278B9 /* DocFixer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DocFixer; sourceTree = BUILT_PRODUCTS_DIR; };
+		831F4A9F2784CC9B00B278B9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,46 +70,120 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				831F4A8627839B7200B278B9 /* ReadWriteLock.framework in Frameworks */,
+				1117D9995D1A53E9D38D0862 /* ReadWriteLock.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		831F4A992784CC9B00B278B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				831F4AA62784CCC000B278B9 /* PGDocFixer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		831F4A7127839B7200B278B9 = {
+		1117D1C65F03578A1178571D /* Project */ = {
 			isa = PBXGroup;
 			children = (
-				831F4A7D27839B7200B278B9 /* ReadWriteLock */,
-				831F4A8927839B7200B278B9 /* ReadWriteLockTests */,
-				831F4A7C27839B7200B278B9 /* Products */,
+				1117DB634F39B0428F2D6E15 /* .gitignore */,
+				1117DE641880F44D5CE2D2D2 /* README.md */,
+				1117D9123BF7AD8B49B97165 /* Package.swift */,
+				1117DECDA6D4748E541E5F2A /* LICENSE */,
+				1117D9D6C9717CE96E32979B /* .jazzy.yaml */,
+				1117D2DE1F040076B42B2CC7 /* Products */,
 			);
+			name = Project;
 			sourceTree = "<group>";
 		};
-		831F4A7C27839B7200B278B9 /* Products */ = {
+		1117D2DE1F040076B42B2CC7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				831F4A7B27839B7200B278B9 /* ReadWriteLock.framework */,
-				831F4A8527839B7200B278B9 /* ReadWriteLockTests.xctest */,
+				1117D879A0FCE5DDBEA7247D /* ReadWriteLock.framework */,
+				1117D25ECF74502AE394E000 /* ReadWriteLockTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		831F4A7D27839B7200B278B9 /* ReadWriteLock */ = {
+		1117D395EABA7CD84CD25766 /* ReadWriteLockTests */ = {
 			isa = PBXGroup;
 			children = (
-				831F4A7E27839B7200B278B9 /* ReadWriteLock.h */,
-				831F4A7F27839B7200B278B9 /* ReadWriteLock.docc */,
+				1117DA2965352AEB3D5D9FAE /* ReadWriteLockTests.swift */,
+			);
+			path = ReadWriteLockTests;
+			sourceTree = "<group>";
+		};
+		1117D5F76FB56368E46BA49E /* C */ = {
+			isa = PBXGroup;
+			children = (
+				1117D605EC0ABE1A0FBA09D5 /* ReadWriteLock.h */,
+			);
+			name = C;
+			sourceTree = "<group>";
+		};
+		1117D767559612BBC35A43E5 /* ReadWriteLock */ = {
+			isa = PBXGroup;
+			children = (
+				1117D794380C8F03D30F1C8E /* ReadWriteLock.docc */,
+				1117DD34906E892BBEE47811 /* ThreadLocal.swift */,
+				1117D4A6C3B4D4F094EF42CD /* ReadWriteLock.swift */,
+				1117D069592C8B78F4AE3D71 /* Utils.swift */,
+				1117D5F76FB56368E46BA49E /* C */,
 			);
 			path = ReadWriteLock;
 			sourceTree = "<group>";
 		};
-		831F4A8927839B7200B278B9 /* ReadWriteLockTests */ = {
+		1117DA22196654F9D86DD014 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				831F4A8A27839B7200B278B9 /* ReadWriteLockTests.swift */,
+				1117D395EABA7CD84CD25766 /* ReadWriteLockTests */,
 			);
-			path = ReadWriteLockTests;
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		1117DF76690845A56DB8004F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				831F4A9E2784CC9B00B278B9 /* DocFixer */,
+				1117D767559612BBC35A43E5 /* ReadWriteLock */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		831F4A7127839B7200B278B9 = {
+			isa = PBXGroup;
+			children = (
+				1117DF76690845A56DB8004F /* Sources */,
+				1117DA22196654F9D86DD014 /* Tests */,
+				1117D1C65F03578A1178571D /* Project */,
+				831F4A9D2784CC9B00B278B9 /* Products */,
+				831F4AA42784CCC000B278B9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		831F4A9D2784CC9B00B278B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				831F4A9C2784CC9B00B278B9 /* DocFixer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		831F4A9E2784CC9B00B278B9 /* DocFixer */ = {
+			isa = PBXGroup;
+			children = (
+				831F4A9F2784CC9B00B278B9 /* main.swift */,
+			);
+			path = DocFixer;
+			sourceTree = "<group>";
+		};
+		831F4AA42784CCC000B278B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,7 +193,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				831F4A8C27839B7200B278B9 /* ReadWriteLock.h in Headers */,
+				1117DC8627BEEA65531028CC /* ReadWriteLock.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,8 +214,9 @@
 			dependencies = (
 			);
 			name = ReadWriteLock;
+			packageProductDependencies = (
+			);
 			productName = ReadWriteLock;
-			productReference = 831F4A7B27839B7200B278B9 /* ReadWriteLock.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		831F4A8427839B7200B278B9 /* ReadWriteLockTests */ = {
@@ -132,8 +234,27 @@
 			);
 			name = ReadWriteLockTests;
 			productName = ReadWriteLockTests;
-			productReference = 831F4A8527839B7200B278B9 /* ReadWriteLockTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		831F4A9B2784CC9B00B278B9 /* DocFixer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 831F4AA12784CC9B00B278B9 /* Build configuration list for PBXNativeTarget "DocFixer" */;
+			buildPhases = (
+				831F4A982784CC9B00B278B9 /* Sources */,
+				831F4A992784CC9B00B278B9 /* Frameworks */,
+				831F4A9A2784CC9B00B278B9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DocFixer;
+			packageProductDependencies = (
+				831F4AA52784CCC000B278B9 /* PGDocFixer */,
+			);
+			productName = DocFixer;
+			productReference = 831F4A9C2784CC9B00B278B9 /* DocFixer */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
@@ -151,6 +272,9 @@
 					831F4A8427839B7200B278B9 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
+					831F4A9B2784CC9B00B278B9 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
 				};
 			};
 			buildConfigurationList = 831F4A7527839B7200B278B9 /* Build configuration list for PBXProject "ReadWriteLock" */;
@@ -162,12 +286,16 @@
 				Base,
 			);
 			mainGroup = 831F4A7127839B7200B278B9;
-			productRefGroup = 831F4A7C27839B7200B278B9 /* Products */;
+			packageReferences = (
+				831F4A952784B76600B278B9 /* XCRemoteSwiftPackageReference "PGDocFixer" */,
+			);
+			productRefGroup = 831F4A9D2784CC9B00B278B9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				831F4A7A27839B7200B278B9 /* ReadWriteLock */,
 				831F4A8427839B7200B278B9 /* ReadWriteLockTests */,
+				831F4A9B2784CC9B00B278B9 /* DocFixer */,
 			);
 		};
 /* End PBXProject section */
@@ -177,6 +305,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1117DBF08F7E6ED1CEE9587B /* ReadWriteLock.docc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +323,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				831F4A8027839B7200B278B9 /* ReadWriteLock.docc in Sources */,
+				1117D31B26F006363031C83B /* ThreadLocal.swift in Sources */,
+				1117D95999F802E9F5AA85CC /* ReadWriteLock.swift in Sources */,
+				1117D44592AD7D52C676DF78 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +333,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				831F4A8B27839B7200B278B9 /* ReadWriteLockTests.swift in Sources */,
+				1117D2E96596F05D7F3C7B61 /* ReadWriteLockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		831F4A982784CC9B00B278B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				831F4AA02784CC9B00B278B9 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +499,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.projectgalen.ReadWriteLock;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				RUN_DOCUMENTATION_COMPILER = YES;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -388,6 +528,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.projectgalen.ReadWriteLock;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				RUN_DOCUMENTATION_COMPILER = YES;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -424,6 +565,28 @@
 			};
 			name = Release;
 		};
+		831F4AA22784CC9B00B278B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q5XWZ7S7E9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		831F4AA32784CC9B00B278B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q5XWZ7S7E9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -454,7 +617,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		831F4AA12784CC9B00B278B9 /* Build configuration list for PBXNativeTarget "DocFixer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				831F4AA22784CC9B00B278B9 /* Debug */,
+				831F4AA32784CC9B00B278B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		831F4A952784B76600B278B9 /* XCRemoteSwiftPackageReference "PGDocFixer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GalenRhodes/PGDocFixer.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		831F4AA52784CCC000B278B9 /* PGDocFixer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 831F4A952784B76600B278B9 /* XCRemoteSwiftPackageReference "PGDocFixer" */;
+			productName = PGDocFixer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 831F4A7227839B7200B278B9 /* Project object */;
 }
